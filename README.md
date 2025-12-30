@@ -143,7 +143,3 @@ pip install -r requirements.txt
 * Strong portfolio / interview talking points
 
 ---
-
-If you want, I can now **prepare the final GitHub README with all plots and tables for accuracies of each phase**, fully ready to push.
-
-Do you want me to do that next?
