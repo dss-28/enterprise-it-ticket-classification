@@ -93,7 +93,7 @@ This project classifies **IT support tickets** into operational categories using
 project/
 │
 ├─ data/
-│   └─ tickets_full.csv
+│   └─ tickets.csv
 │
 ├─ notebooks/
 │   ├─ phase1_classical_ml.ipynb
