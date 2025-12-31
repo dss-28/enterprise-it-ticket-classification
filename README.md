@@ -99,14 +99,7 @@ project/
 │   ├─ phase1_classical_ml.ipynb
 │   ├─ phase2_dl_experiments.ipynb
 │   └─ phase3_embeddings_svm.ipynb
-│
-├─ scripts/
-│   ├─ preprocessing.py
-│   ├─ train_phase1.py
-│   └─ train_phase3_embeddings.py
-│
-├─ requirements.txt
-└─ README.md
+│─ README.md
 ```
 
 ---
