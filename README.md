@@ -152,6 +152,52 @@ Storage	0.83	0.82	0.83	554
 Accuracy			0.79	9518
 Macro Avg	0.83	0.78	0.80	9518
 Weighted Avg	0.80	0.79	0.79	9518
+You should paste the **Classification Report table** **right after the confusion matrix section** in your README.
+
+Here’s the **ideal flow for that part of the README**:
+
+---
+
+### Phase 3 — Embedding-Based Machine Learning
+
+*(SBERT + SVM, Word2Vec + SVM, MiniLM for SBERT)*
+
+* Text Representation: Dense semantic embeddings
+* Classifier: Linear SVM
+
+| Embedding Method | Accuracy |
+| ---------------- | -------- |
+| Word2Vec + SVM   | ~82%     |
+| SBERT + SVM      | ~80–81%  |
+
+> Embeddings capture context better than TF-IDF or sequence models, achieve comparable accuracy, and are less computationally expensive.
+
+---
+
+## Confusion Matrix — Final Model
+
+The confusion matrix below shows performance across all 8 classes:
+
+---
+
+## Classification Report — Final Model
+
+| Class                 | Precision | Recall | F1-Score | Support |
+| --------------------- | --------- | ------ | -------- | ------- |
+| Access                | 0.85      | 0.86   | 0.85     | 1412    |
+| Administrative rights | 0.86      | 0.64   | 0.73     | 350     |
+| HR Support            | 0.79      | 0.79   | 0.79     | 2171    |
+| Hardware              | 0.76      | 0.80   | 0.78     | 2708    |
+| Internal Project      | 0.85      | 0.78   | 0.81     | 423     |
+| Miscellaneous         | 0.73      | 0.73   | 0.73     | 1408    |
+| Purchase              | 0.94      | 0.85   | 0.89     | 492     |
+| Storage               | 0.83      | 0.82   | 0.83     | 554     |
+| **Accuracy**          |           |        | 0.79     | 9518    |
+| **Macro Avg**         | 0.83      | 0.78   | 0.80     | 9518    |
+| **Weighted Avg**      | 0.80      | 0.79   | 0.79     | 9518    |
+
+---
+
 
 ## **Evaluation Setup**
 
@@ -193,29 +239,6 @@ project/
 
 ---
 
-## **How to Run**
-
-1. Clone the repository:
-
-```bash
-git clone <repo_url>
-cd project
-```
-
-2. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-3. Run notebooks sequentially:
-
-* Phase 1 → Classical ML
-* Phase 2 → Deep Learning
-* Phase 3 → Embeddings + SVM
-
----
-
 ## **Why This Project Stands Out**
 
 * Uses a **large real-world enterprise dataset**
@@ -229,7 +252,7 @@ pip install -r requirements.txt
 ## **Future Enhancements**
 
 * Hyperparameter tuning
-* Class-wise metrics and error analysis
+* Few Shot Learning
 * Model inference pipeline
 * Deployment-ready API
 
