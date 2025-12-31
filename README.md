@@ -253,7 +253,7 @@ project/
 
 * Hyperparameter tuning
 * Few Shot Learning
-* Model inference pipeline
+* Online Learning
 * Deployment-ready API
 
 ---
